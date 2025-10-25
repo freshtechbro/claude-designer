@@ -138,6 +138,38 @@ Checks:
 
 Automatically validates before packaging. Creates a distributable zip file named `<skill-name>.zip`.
 
+#### ZIP Structure Requirements
+
+**CRITICAL**: Claude.ai requires a specific ZIP structure for skill uploads:
+
+**Required Structure** (correct):
+```
+skill-name.zip
+├── SKILL.md              ← Must be at root level!
+├── references/
+│   └── api_reference.md
+├── scripts/
+│   └── helper_script.py
+└── assets/
+    └── templates/
+```
+
+**Common Errors** (will be rejected):
+- ❌ SKILL.md inside subdirectory (e.g., `skill-name/SKILL.md`)
+- ❌ Nested .zip files inside the archive
+- ❌ Missing YAML frontmatter in SKILL.md
+
+**How package_skill.py Ensures Correct Structure**:
+1. **Root-level files**: Uses `relative_to(skill_path)` to place SKILL.md at root
+2. **No nested zips**: Automatically skips .zip files during packaging
+3. **Safe output location**: Outputs to parent directory by default to avoid nesting
+4. **Validation first**: Runs validation before creating the zip file
+
+**Upload Requirements** (from claude.ai):
+- ZIP file must include exactly one SKILL.md file at the root level
+- SKILL.md must contain valid YAML frontmatter with `name` and `description`
+- No nested zip files are allowed in the archive
+
 ### Python Script Requirements
 
 **CRITICAL**: All Python scripts in skills MUST meet these standards:

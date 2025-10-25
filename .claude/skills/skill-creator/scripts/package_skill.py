@@ -59,7 +59,8 @@ def package_skill(skill_path, output_dir=None):
         output_path = Path(output_dir).resolve()
         output_path.mkdir(parents=True, exist_ok=True)
     else:
-        output_path = Path.cwd()
+        # Default to parent directory to avoid nesting zip files
+        output_path = skill_path.parent
 
     zip_filename = output_path / f"{skill_name}.zip"
 
@@ -69,8 +70,13 @@ def package_skill(skill_path, output_dir=None):
             # Walk through the skill directory
             for file_path in skill_path.rglob('*'):
                 if file_path.is_file():
-                    # Calculate the relative path within the zip
-                    arcname = file_path.relative_to(skill_path.parent)
+                    # Skip .zip files to avoid nested archives
+                    if file_path.suffix == '.zip':
+                        print(f"  Skipped: {file_path.name} (zip file)")
+                        continue
+
+                    # Calculate the relative path within the zip (from skill root, not parent)
+                    arcname = file_path.relative_to(skill_path)
                     zipf.write(file_path, arcname)
                     print(f"  Added: {arcname}")
 

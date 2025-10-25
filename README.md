@@ -47,7 +47,21 @@ Progressive disclosure: Claude loads only what's needed per task.
 
 **Prerequisites**: Claude Code CLI or [claude.com/code](https://claude.com/code), Python 3.7+
 
-### Option 1: Use All Skills
+### Option 1: Upload to claude.ai (Recommended)
+
+Upload individual skills directly to [claude.ai](https://claude.ai):
+
+1. Go to **Settings > Features > Skills**
+2. Click **Upload skill**
+3. Select any `.zip` file from `.claude/skills/`
+4. Skill activates automatically when Claude detects relevant tasks
+
+**All skills are properly packaged** with:
+- ✅ SKILL.md at root level with valid YAML frontmatter
+- ✅ No nested zip files
+- ✅ Correct directory structure for claude.ai
+
+### Option 2: Clone Repository (All Skills)
 
 ```bash
 git clone <repository-url>
@@ -59,12 +73,13 @@ Skills auto-activate when triggered. Example prompts:
 - "Add GSAP scroll animations" → `gsap-scrolltrigger`
 - "Build React Three Fiber component with physics" → `react-three-fiber`
 
-### Option 2: Individual Skills
+### Option 3: Individual Skills (Local Projects)
 
-Each skill packaged at `.claude/skills/<skill-name>/<skill-name>.zip`
+Copy individual skills to your project:
 
 ```bash
-cp claudeskills/.claude/skills/threejs-webgl/threejs-webgl.zip your-project/.claude/skills/
+# Extract skill contents (not the zip itself)
+unzip .claude/skills/threejs-webgl.zip -d your-project/.claude/skills/threejs-webgl/
 ```
 
 ## Creating Skills
@@ -79,6 +94,33 @@ cp claudeskills/.claude/skills/threejs-webgl/threejs-webgl.zip your-project/.cla
 # Package (auto-validates)
 .claude/skills/skill-creator/scripts/package_skill.py .claude/skills/my-skill
 ```
+
+### Packaging Requirements
+
+All skills in this repository meet claude.ai upload requirements:
+
+**Required ZIP Structure**:
+```
+skill-name.zip
+├── SKILL.md              ← Must be at root level!
+├── references/
+│   └── api_reference.md
+├── scripts/
+│   └── helper_script.py
+└── assets/
+    └── templates/
+```
+
+**Automatic Validation**:
+- `package_skill.py` ensures correct structure
+- Skips `.zip` files to prevent nesting
+- Places SKILL.md at root level (not in subdirectory)
+- Validates YAML frontmatter before packaging
+
+**Common Errors** (all fixed in this repo):
+- ❌ SKILL.md inside subdirectory (e.g., `skill-name/SKILL.md`)
+- ❌ Nested .zip files inside archive
+- ❌ Missing or invalid YAML frontmatter
 
 ## Generator Scripts
 
@@ -141,7 +183,20 @@ MIT License - see [LICENSE](LICENSE) file
 📦 **22 Skills** - 3D graphics, animation, scroll effects, interactive web
 🔧 **50+ Generators** - Automated boilerplate and components
 📚 **Fully Documented** - Guides, patterns, examples
+🚀 **Upload Ready** - All skills meet claude.ai packaging requirements
+
+### Recent Updates
+
+**2025-10-25**: Fixed packaging script for claude.ai compatibility
+- ✅ Corrected ZIP structure (SKILL.md at root level)
+- ✅ Removed nested .zip files
+- ✅ All 22 skills re-packaged with correct structure
+- ✅ Verified upload compatibility with claude.ai
 
 Built following [Anthropic's Claude Skills guidelines](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview).
 
-**Star this repository** to stay updated!
+**Ready to use**: Upload any skill to [claude.ai](https://claude.ai) or clone the repository!
+
+---
+
+**Star this repository** to stay updated with new skills and features!
