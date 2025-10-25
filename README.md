@@ -1,4 +1,4 @@
-# Claude Skills - Design Agency Toolstack
+# Claude Design Skillstack
 
 Claude Code skills for modern web development: 3D graphics, WebGL/WebGPU, animation, and interactive experiences.
 
