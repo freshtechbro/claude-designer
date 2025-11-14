@@ -16,6 +16,11 @@
     "animation"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
-  "agents": "./agents/"
+  "commands": [
+    "./commands/component_importer.md",
+    "./commands/props_generator.md"
+  ],
+  "agents": [
+    "./agents/animated-component-libraries-specialist.md"
+  ]
 }

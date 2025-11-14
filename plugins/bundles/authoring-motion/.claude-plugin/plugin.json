@@ -17,6 +17,23 @@
     "3d"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
-  "agents": "./agents/"
+  "commands": [
+    "./commands/blender-web-pipeline-batch_export.md",
+    "./commands/blender-web-pipeline-generate_lods.md",
+    "./commands/blender-web-pipeline-optimize_model.md",
+    "./commands/rive-interactive-component_generator.md",
+    "./commands/rive-interactive-viewmodel_builder.md",
+    "./commands/spline-interactive-component_builder.md",
+    "./commands/spline-interactive-project_generator.md",
+    "./commands/substance-3d-texturing-batch_export.md",
+    "./commands/substance-3d-texturing-generate_export_preset.md",
+    "./commands/substance-3d-texturing-web_optimizer.md"
+  ],
+  "agents": [
+    "./agents/authoring-motion-integration.md",
+    "./agents/blender-web-pipeline-pipeline.md",
+    "./agents/rive-interactive-choreographer.md",
+    "./agents/spline-interactive-pipeline.md",
+    "./agents/substance-3d-texturing-pipeline.md"
+  ]
 }

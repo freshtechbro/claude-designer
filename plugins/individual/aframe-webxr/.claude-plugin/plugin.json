@@ -17,6 +17,11 @@
     "3d"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
-  "agents": "./agents/"
+  "commands": [
+    "./commands/component_builder.md",
+    "./commands/scene_generator.md"
+  ],
+  "agents": [
+    "./agents/aframe-webxr-architect.md"
+  ]
 }

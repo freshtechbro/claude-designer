@@ -16,6 +16,11 @@
     "web"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
-  "agents": "./agents/"
+  "commands": [
+    "./commands/design_audit.md",
+    "./commands/pattern_generator.md"
+  ],
+  "agents": [
+    "./agents/modern-web-design-specialist.md"
+  ]
 }

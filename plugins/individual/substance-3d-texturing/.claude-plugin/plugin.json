@@ -16,6 +16,12 @@
     "materials"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
-  "agents": "./agents/"
+  "commands": [
+    "./commands/batch_export.md",
+    "./commands/generate_export_preset.md",
+    "./commands/web_optimizer.md"
+  ],
+  "agents": [
+    "./agents/substance-3d-texturing-pipeline.md"
+  ]
 }

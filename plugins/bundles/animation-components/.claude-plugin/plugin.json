@@ -17,6 +17,24 @@
     "motion"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
-  "agents": "./agents/"
+  "commands": [
+    "./commands/animated-component-libraries-component_importer.md",
+    "./commands/animated-component-libraries-props_generator.md",
+    "./commands/animejs-animation_generator.md",
+    "./commands/animejs-timeline_builder.md",
+    "./commands/lottie-animations-generate_lottie_component.md",
+    "./commands/lottie-animations-optimize_lottie.md",
+    "./commands/react-spring-physics-physics_calculator.md",
+    "./commands/react-spring-physics-spring_generator.md",
+    "./commands/scroll-reveal-libraries-aos_generator.md",
+    "./commands/scroll-reveal-libraries-config_builder.md"
+  ],
+  "agents": [
+    "./agents/animated-component-libraries-specialist.md",
+    "./agents/animation-components-integration.md",
+    "./agents/animejs-choreographer.md",
+    "./agents/lottie-animations-choreographer.md",
+    "./agents/react-spring-physics-choreographer.md",
+    "./agents/scroll-reveal-libraries-specialist.md"
+  ]
 }

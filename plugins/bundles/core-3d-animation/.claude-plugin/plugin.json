@@ -17,6 +17,23 @@
     "complete-stack"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
-  "agents": "./agents/"
+  "commands": [
+    "./commands/babylonjs-engine-mesh_builder.md",
+    "./commands/babylonjs-engine-scene_generator.md",
+    "./commands/gsap-scrolltrigger-generate_animation.md",
+    "./commands/gsap-scrolltrigger-timeline_builder.md",
+    "./commands/motion-framer-animation_generator.md",
+    "./commands/motion-framer-variant_builder.md",
+    "./commands/react-three-fiber-component_generator.md",
+    "./commands/react-three-fiber-scene_setup.md",
+    "./commands/threejs-webgl-setup_scene.md"
+  ],
+  "agents": [
+    "./agents/babylonjs-engine-architect.md",
+    "./agents/core-3d-animation-integration.md",
+    "./agents/gsap-scrolltrigger-choreographer.md",
+    "./agents/motion-framer-choreographer.md",
+    "./agents/react-three-fiber-architect.md",
+    "./agents/threejs-webgl-architect.md"
+  ]
 }

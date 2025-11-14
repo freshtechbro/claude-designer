@@ -16,6 +16,11 @@
     "animation"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
-  "agents": "./agents/"
+  "commands": [
+    "./commands/component_generator.md",
+    "./commands/viewmodel_builder.md"
+  ],
+  "agents": [
+    "./agents/rive-interactive-choreographer.md"
+  ]
 }

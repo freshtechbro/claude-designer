@@ -16,6 +16,11 @@
     "scroll"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
-  "agents": "./agents/"
+  "commands": [
+    "./commands/generate_config.md",
+    "./commands/integration_helper.md"
+  ],
+  "agents": [
+    "./agents/locomotive-scroll-specialist.md"
+  ]
 }

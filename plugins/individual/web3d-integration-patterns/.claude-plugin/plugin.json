@@ -16,6 +16,11 @@
     "animation"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
-  "agents": "./agents/"
+  "commands": [
+    "./commands/help.md",
+    "./commands/setup.md"
+  ],
+  "agents": [
+    "./agents/web3d-integration-patterns-specialist.md"
+  ]
 }

@@ -17,6 +17,10 @@
     "webgpu"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
-  "agents": "./agents/"
+  "commands": [
+    "./commands/setup_scene.md"
+  ],
+  "agents": [
+    "./agents/threejs-webgl-architect.md"
+  ]
 }

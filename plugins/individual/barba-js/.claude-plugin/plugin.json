@@ -16,6 +16,11 @@
     "spa"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
-  "agents": "./agents/"
+  "commands": [
+    "./commands/project_setup.md",
+    "./commands/transition_generator.md"
+  ],
+  "agents": [
+    "./agents/barba-js-specialist.md"
+  ]
 }

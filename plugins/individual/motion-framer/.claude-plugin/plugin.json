@@ -16,6 +16,11 @@
     "animation"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
-  "agents": "./agents/"
+  "commands": [
+    "./commands/animation_generator.md",
+    "./commands/variant_builder.md"
+  ],
+  "agents": [
+    "./agents/motion-framer-choreographer.md"
+  ]
 }

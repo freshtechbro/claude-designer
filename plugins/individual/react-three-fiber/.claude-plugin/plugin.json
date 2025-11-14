@@ -17,6 +17,11 @@
     "webgl"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
-  "agents": "./agents/"
+  "commands": [
+    "./commands/component_generator.md",
+    "./commands/scene_setup.md"
+  ],
+  "agents": [
+    "./agents/react-three-fiber-architect.md"
+  ]
 }

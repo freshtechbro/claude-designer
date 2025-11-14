@@ -17,6 +17,27 @@
     "transitions"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
-  "agents": "./agents/"
+  "commands": [
+    "./commands/aframe-webxr-component_builder.md",
+    "./commands/aframe-webxr-scene_generator.md",
+    "./commands/barba-js-project_setup.md",
+    "./commands/barba-js-transition_generator.md",
+    "./commands/lightweight-3d-effects-generate_zdog.md",
+    "./commands/lightweight-3d-effects-setup_vanta.md",
+    "./commands/locomotive-scroll-generate_config.md",
+    "./commands/locomotive-scroll-integration_helper.md",
+    "./commands/pixijs-2d-particle_builder.md",
+    "./commands/pixijs-2d-sprite_generator.md",
+    "./commands/playcanvas-engine-component_builder.md",
+    "./commands/playcanvas-engine-project_generator.md"
+  ],
+  "agents": [
+    "./agents/aframe-webxr-architect.md",
+    "./agents/barba-js-specialist.md",
+    "./agents/extended-3d-scroll-integration.md",
+    "./agents/lightweight-3d-effects-architect.md",
+    "./agents/locomotive-scroll-specialist.md",
+    "./agents/pixijs-2d-architect.md",
+    "./agents/playcanvas-engine-architect.md"
+  ]
 }

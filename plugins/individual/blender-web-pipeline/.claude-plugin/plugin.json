@@ -17,6 +17,12 @@
     "3d"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
-  "agents": "./agents/"
+  "commands": [
+    "./commands/batch_export.md",
+    "./commands/generate_lods.md",
+    "./commands/optimize_model.md"
+  ],
+  "agents": [
+    "./agents/blender-web-pipeline-pipeline.md"
+  ]
 }

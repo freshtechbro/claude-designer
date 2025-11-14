@@ -16,6 +16,11 @@
     "spring"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
-  "agents": "./agents/"
+  "commands": [
+    "./commands/physics_calculator.md",
+    "./commands/spring_generator.md"
+  ],
+  "agents": [
+    "./agents/react-spring-physics-choreographer.md"
+  ]
 }

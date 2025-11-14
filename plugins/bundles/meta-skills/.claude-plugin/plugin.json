@@ -17,6 +17,15 @@
     "patterns"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
-  "agents": "./agents/"
+  "commands": [
+    "./commands/modern-web-design-design_audit.md",
+    "./commands/modern-web-design-pattern_generator.md",
+    "./commands/web3d-integration-patterns-help.md",
+    "./commands/web3d-integration-patterns-setup.md"
+  ],
+  "agents": [
+    "./agents/meta-skills-integration.md",
+    "./agents/modern-web-design-specialist.md",
+    "./agents/web3d-integration-patterns-specialist.md"
+  ]
 }

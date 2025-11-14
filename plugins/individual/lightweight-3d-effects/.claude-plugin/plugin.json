@@ -17,6 +17,11 @@
     "3d"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
-  "agents": "./agents/"
+  "commands": [
+    "./commands/generate_zdog.md",
+    "./commands/setup_vanta.md"
+  ],
+  "agents": [
+    "./agents/lightweight-3d-effects-architect.md"
+  ]
 }

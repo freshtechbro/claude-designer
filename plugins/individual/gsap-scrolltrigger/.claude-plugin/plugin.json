@@ -16,6 +16,11 @@
     "scrolltrigger"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
-  "agents": "./agents/"
+  "commands": [
+    "./commands/generate_animation.md",
+    "./commands/timeline_builder.md"
+  ],
+  "agents": [
+    "./agents/gsap-scrolltrigger-choreographer.md"
+  ]
 }

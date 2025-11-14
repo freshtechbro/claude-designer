@@ -16,6 +16,11 @@
     "game-engine"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
-  "agents": "./agents/"
+  "commands": [
+    "./commands/mesh_builder.md",
+    "./commands/scene_generator.md"
+  ],
+  "agents": [
+    "./agents/babylonjs-engine-architect.md"
+  ]
 }

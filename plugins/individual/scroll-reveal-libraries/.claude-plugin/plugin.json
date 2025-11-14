@@ -16,6 +16,11 @@
     "scroll"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
-  "agents": "./agents/"
+  "commands": [
+    "./commands/aos_generator.md",
+    "./commands/config_builder.md"
+  ],
+  "agents": [
+    "./agents/scroll-reveal-libraries-specialist.md"
+  ]
 }

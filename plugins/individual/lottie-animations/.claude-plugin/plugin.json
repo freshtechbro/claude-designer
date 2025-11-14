@@ -16,6 +16,11 @@
     "animation"
   ],
   "skills": "./skills/",
-  "commands": "./commands/",
-  "agents": "./agents/"
+  "commands": [
+    "./commands/generate_lottie_component.md",
+    "./commands/optimize_lottie.md"
+  ],
+  "agents": [
+    "./agents/lottie-animations-choreographer.md"
+  ]
 }
