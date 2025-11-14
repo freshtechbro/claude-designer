@@ -1,7 +1,9 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "claude-design-skillstack",
   "owner": {
     "name": "Claude Design Skillstack",
+    "email": "oladotun.olatunji@gmail.com",
     "url": "https://github.com/freshtechbro/claudedesignskills"
   },
   "metadata": {
@@ -25,7 +27,10 @@
         "ar",
         "3d"
       ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     },
     {
@@ -40,7 +45,10 @@
         "components",
         "animation"
       ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     },
     {
@@ -55,7 +63,10 @@
         "svg",
         "animation"
       ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     },
     {
@@ -70,7 +81,10 @@
         "webgl",
         "game-engine"
       ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     },
     {
@@ -85,7 +99,10 @@
         "routing",
         "spa"
       ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     },
     {
@@ -101,7 +118,10 @@
         "pipeline",
         "3d"
       ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     },
     {
@@ -116,7 +136,10 @@
         "scroll",
         "scrolltrigger"
       ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     },
     {
@@ -132,7 +155,10 @@
         "lightweight",
         "3d"
       ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     },
     {
@@ -147,7 +173,10 @@
         "parallax",
         "scroll"
       ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     },
     {
@@ -162,7 +191,10 @@
         "json",
         "animation"
       ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     },
     {
@@ -177,7 +209,10 @@
         "ux",
         "web"
       ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     },
     {
@@ -192,7 +227,10 @@
         "react",
         "animation"
       ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     },
     {
@@ -208,7 +246,10 @@
         "canvas",
         "sprites"
       ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     },
     {
@@ -223,7 +264,10 @@
         "game-engine",
         "3d"
       ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     },
     {
@@ -238,7 +282,10 @@
         "animation",
         "spring"
       ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     },
     {
@@ -254,7 +301,10 @@
         "r3f",
         "webgl"
       ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     },
     {
@@ -269,7 +319,10 @@
         "state-machine",
         "animation"
       ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     },
     {
@@ -284,7 +337,10 @@
         "animation",
         "scroll"
       ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     },
     {
@@ -299,7 +355,10 @@
         "3d",
         "visual-editor"
       ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     },
     {
@@ -314,7 +373,10 @@
         "pbr",
         "materials"
       ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     },
     {
@@ -330,7 +392,10 @@
         "graphics",
         "webgpu"
       ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     },
     {
@@ -345,7 +410,10 @@
         "3d",
         "animation"
       ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     },
     {
@@ -361,15 +429,10 @@
         "ui",
         "motion"
       ],
-      "bundle": true,
-      "includes": [
-        "react-spring-physics",
-        "animated-component-libraries",
-        "scroll-reveal-libraries",
-        "animejs",
-        "lottie-animations"
-      ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     },
     {
@@ -385,14 +448,10 @@
         "motion-graphics",
         "3d"
       ],
-      "bundle": true,
-      "includes": [
-        "blender-web-pipeline",
-        "spline-interactive",
-        "rive-interactive",
-        "substance-3d-texturing"
-      ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     },
     {
@@ -408,15 +467,10 @@
         "core",
         "complete-stack"
       ],
-      "bundle": true,
-      "includes": [
-        "threejs-webgl",
-        "gsap-scrolltrigger",
-        "react-three-fiber",
-        "motion-framer",
-        "babylonjs-engine"
-      ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     },
     {
@@ -432,16 +486,10 @@
         "effects",
         "transitions"
       ],
-      "bundle": true,
-      "includes": [
-        "aframe-webxr",
-        "lightweight-3d-effects",
-        "playcanvas-engine",
-        "pixijs-2d",
-        "locomotive-scroll",
-        "barba-js"
-      ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     },
     {
@@ -457,12 +505,10 @@
         "design",
         "patterns"
       ],
-      "bundle": true,
-      "includes": [
-        "web3d-integration-patterns",
-        "modern-web-design"
-      ],
-      "author": "Claude Design Skillstack",
+      "author": {
+        "name": "Claude Design Skillstack",
+        "email": "oladotun.olatunji@gmail.com"
+      },
       "license": "Apache-2.0"
     }
   ]
