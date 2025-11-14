@@ -1,18 +1,52 @@
 # Claude Design Skillstack
 
-Claude Code skills for modern web development: 3D graphics, WebGL/WebGPU, animation, and interactive experiences.
+**Professional design agency skillstack for 3D/WebGL, animation, and modern web development**
+
+Claude Code plugin marketplace providing comprehensive coverage of modern web technologies including Three.js, GSAP, React Three Fiber, Framer Motion, Babylon.js, and more.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Plugins: 27](https://img.shields.io/badge/Plugins-27-blue.svg)](#available-plugins)
 [![Skills: 22](https://img.shields.io/badge/Skills-22-green.svg)](#available-skills)
 [![Status: Production](https://img.shields.io/badge/Status-Production-brightgreen.svg)](#status)
 
+## 🚀 Quick Start (Plugin Marketplace)
+
+**New**: Install skills as plugins directly from this marketplace!
+
+```bash
+# Add marketplace to Claude Code
+/plugin marketplace add freshtechbro/claudedesignskills
+
+# Install individual plugins
+/plugin install threejs-webgl
+/plugin install gsap-scrolltrigger
+/plugin install react-three-fiber
+
+# Or install complete bundles
+/plugin install core-3d-animation        # 5 skills: Three.js, GSAP, R3F, Motion, Babylon
+/plugin install extended-3d-scroll       # 6 skills: A-Frame, Vanta, PlayCanvas, PixiJS, Locomotive, Barba
+/plugin install animation-components     # 5 skills: React Spring, Magic UI, AOS, Anime.js, Lottie
+/plugin install authoring-motion         # 4 skills: Blender, Spline, Rive, Substance 3D
+/plugin install meta-skills             # 2 skills: Integration patterns, Modern design
+```
+
+**Each plugin includes**:
+- ✅ Complete skill content with SKILL.md
+- ✅ 1-3 slash commands for quick actions
+- ✅ 1-2 specialized agents for domain expertise
+- ✅ Scripts, references, and asset templates
+
+📚 **[View complete marketplace documentation →](MARKETPLACE.md)**
+
 ## Overview
 
-**22 complete, packaged skills** extending Claude Code with specialized knowledge for cutting-edge web technologies.
+**27 plugins (22 individual + 5 bundles)** extending Claude Code with specialized knowledge for cutting-edge web technologies.
 
 **Key Features**:
-- ✅ 22 skills covering 3D, animation, and interactive web
-- 🔧 50+ generator scripts for boilerplate and components
+- 🏪 Plugin marketplace with 27 ready-to-install plugins
+- ✅ 22 individual skills + 5 category bundles
+- 🔧 50+ slash commands for instant boilerplate generation
+- 🤖 27+ specialized agents for domain expertise
 - 📚 Comprehensive patterns, examples, and integration guides
 - 🚀 Auto-activates when Claude detects relevant tasks
 
@@ -25,6 +59,20 @@ Modular packages that teach Claude specific technologies. Each contains:
 - **assets/** - Templates and examples
 
 Progressive disclosure: Claude loads only what's needed per task.
+
+## Available Plugins
+
+### Individual Plugins (22)
+
+All plugins include slash commands and specialized agents. [Full details →](MARKETPLACE.md)
+
+### Category Bundles (5)
+
+- **core-3d-animation** - Three.js, GSAP, R3F, Motion, Babylon.js (5 skills, 9 commands, 6 agents)
+- **extended-3d-scroll** - A-Frame, Vanta, PlayCanvas, PixiJS, Locomotive, Barba (6 skills, 12 commands, 7 agents)
+- **animation-components** - React Spring, Magic UI, AOS, Anime.js, Lottie (5 skills, 10 commands, 6 agents)
+- **authoring-motion** - Blender, Spline, Rive, Substance 3D (4 skills, 10 commands, 5 agents)
+- **meta-skills** - Integration patterns, Modern design (2 skills, 4 commands, 3 agents)
 
 ## Available Skills
 
@@ -45,9 +93,29 @@ Progressive disclosure: Claude loads only what's needed per task.
 
 ## Installation
 
-**Prerequisites**: Claude Code CLI or [claude.com/code](https://claude.com/code), Python 3.7+
+**Prerequisites**: Claude Code CLI or [claude.com/code](https://claude.com/code)
 
-### Option 1: Upload to claude.ai (Recommended)
+### Option 1: Plugin Marketplace (Recommended - New!)
+
+Install directly from the marketplace:
+
+```bash
+# Add marketplace
+/plugin marketplace add freshtechbro/claudedesignskills
+
+# Browse and install plugins
+/plugin install threejs-webgl
+/plugin install core-3d-animation  # Bundle: 5 skills + commands + agents
+```
+
+**Benefits**:
+- ✅ One-command installation
+- ✅ Includes slash commands for quick actions
+- ✅ Specialized agents for domain expertise
+- ✅ Automatic updates when repo updates
+- ✅ Individual plugins or category bundles
+
+### Option 2: Upload to claude.ai
 
 Upload individual skills directly to [claude.ai](https://claude.ai):
 
@@ -61,11 +129,13 @@ Upload individual skills directly to [claude.ai](https://claude.ai):
 - ✅ No nested zip files
 - ✅ Correct directory structure for claude.ai
 
-### Option 2: Clone Repository (All Skills)
+### Option 3: Clone Repository (Development)
+
+Clone for skill development or local customization:
 
 ```bash
-git clone <repository-url>
-cd claudeskills
+git clone https://github.com/freshtechbro/claudedesignskills.git
+cd claudedesignskills
 ```
 
 Skills auto-activate when triggered. Example prompts:
@@ -73,7 +143,7 @@ Skills auto-activate when triggered. Example prompts:
 - "Add GSAP scroll animations" → `gsap-scrolltrigger`
 - "Build React Three Fiber component with physics" → `react-three-fiber`
 
-### Option 3: Individual Skills (Local Projects)
+### Option 4: Individual Skills (Local Projects)
 
 Copy individual skills to your project:
 
@@ -180,12 +250,21 @@ MIT License - see [LICENSE](LICENSE) file
 ## Status
 
 ✅ **Production Ready** - All 22 skills complete, validated, and packaged
+🏪 **Plugin Marketplace** - 27 plugins (22 individual + 5 bundles) ready to install
 📦 **22 Skills** - 3D graphics, animation, scroll effects, interactive web
-🔧 **50+ Generators** - Automated boilerplate and components
+🔧 **50+ Commands** - Slash commands for instant boilerplate
+🤖 **27+ Agents** - Specialized domain experts
 📚 **Fully Documented** - Guides, patterns, examples
 🚀 **Upload Ready** - All skills meet claude.ai packaging requirements
 
 ### Recent Updates
+
+**2025-11-13**: Launched Plugin Marketplace
+- ✅ Created 27 plugins (22 individual + 5 category bundles)
+- ✅ Added 50+ slash commands for quick actions
+- ✅ Created 27+ specialized agents for domain expertise
+- ✅ Published marketplace.json for easy installation
+- ✅ Full marketplace documentation in MARKETPLACE.md
 
 **2025-10-25**: Fixed packaging script for claude.ai compatibility
 - ✅ Corrected ZIP structure (SKILL.md at root level)

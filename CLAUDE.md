@@ -8,9 +8,13 @@ Be concise and to the point. Sacrifice grammar and punctuation for clarity and c
 
 ## Repository Overview
 
-This is a skills management repository for Claude Code. Skills are modular, self-contained packages that extend Claude's capabilities by providing specialized knowledge, workflows, and tools. Each skill acts as an "onboarding guide" for specific domains or tasks.
+This is a **dual-purpose repository**:
+1. **Development Workspace** - Create and manage Claude skills in `.claude/skills/`
+2. **Plugin Marketplace** - Distribute skills as plugins via `.claude/plugins/` and `.claude-plugin/marketplace.json`
 
-The repository focuses on creating comprehensive skills for a design agency's web development toolstack, particularly 3D/WebGL and animation technologies.
+Skills are modular, self-contained packages that extend Claude's capabilities by providing specialized knowledge, workflows, and tools. Each skill acts as an "onboarding guide" for specific domains or tasks.
+
+The repository focuses on creating comprehensive skills for a design agency's web development toolstack, particularly 3D/WebGL and animation technologies, then packaging them as plugins with slash commands and specialized agents.
 
 ## Official Documentation Reference
 
@@ -27,7 +31,7 @@ When creating or modifying skills, **always consult the official documentation**
 
 ## Quick Reference
 
-**Common Workflows**:
+**Skill Development Workflows**:
 
 ```bash
 # Create a new skill
@@ -48,6 +52,41 @@ done
 chmod +x .claude/skills/my-skill/scripts/my_script.py
 ```
 
+**Plugin Marketplace Workflows**:
+
+```bash
+# Generate individual plugin from skill
+./scripts/marketplace/generate_plugin.py threejs-webgl
+
+# Generate all individual plugins
+./scripts/marketplace/generate_plugin.py --all
+
+# Generate category bundle plugin
+./scripts/marketplace/generate_bundle.py core-3d-animation
+
+# Generate all bundles
+./scripts/marketplace/generate_bundle.py --all
+
+# Generate marketplace.json manifest
+./scripts/marketplace/generate_marketplace.py
+
+# Validate marketplace and all plugins
+./scripts/marketplace/validate_marketplace.py
+```
+
+**User Installation Workflows**:
+
+```bash
+# Add marketplace to Claude Code
+/plugin marketplace add freshtechbro/claudedesignskills
+
+# Install individual plugin
+/plugin install threejs-webgl
+
+# Install bundle plugin
+/plugin install core-3d-animation
+```
+
 **Skill Activation**:
 - Skills auto-activate when Claude detects trigger keywords from the description
 - Mention specific technologies: "Three.js", "GSAP", "React Three Fiber"
@@ -57,36 +96,61 @@ chmod +x .claude/skills/my-skill/scripts/my_script.py
 
 ```
 claudeskills/
-├── CLAUDE.md                  # This file - repository guidance
-└── .claude/
-    └── skills/
-        ├── skill-creator/         # Meta-skill for creating other skills
-        │   ├── SKILL.md          # Skill instructions
-        │   ├── LICENSE.txt       # Apache 2.0 license
-        │   └── scripts/
-        │       ├── init_skill.py      # Initialize new skill from template
-        │       ├── package_skill.py   # Package skill into distributable zip
-        │       └── quick_validate.py  # Validate skill structure
-        │
-        ├── threejs-webgl/        # ✅ Complete
-        ├── gsap-scrolltrigger/   # ✅ Complete
-        ├── react-three-fiber/    # ✅ Complete
-        ├── motion-framer/        # ✅ Complete
-        ├── babylonjs-engine/     # ✅ Complete
-        ├── aframe-webxr/         # ✅ Complete
-        ├── lightweight-3d-effects/ # ✅ Complete
-        └── playcanvas-engine/    # 🚧 In Progress
+├── CLAUDE.md                      # This file - repository guidance
+├── MARKETPLACE.md                 # Plugin marketplace documentation
+├── README.md                      # Public-facing documentation
+│
+├── .claude/
+│   ├── skills/                    # Skill development workspace
+│   │   ├── skill-creator/         # Meta-skill for creating skills
+│   │   ├── threejs-webgl/         # ✅ Complete (22 total)
+│   │   ├── gsap-scrolltrigger/
+│   │   └── ...                    # (20 more skills)
+│   │
+│   └── plugins/                   # Generated plugins for distribution
+│       ├── individual/            # 22 individual skill plugins
+│       │   ├── threejs-webgl/     # Each includes skills/, commands/, agents/
+│       │   ├── gsap-scrolltrigger/
+│       │   └── ...
+│       │
+│       └── bundles/               # 5 category bundle plugins
+│           ├── core-3d-animation/
+│           ├── extended-3d-scroll/
+│           ├── animation-components/
+│           ├── authoring-motion/
+│           └── meta-skills/
+│
+├── .claude-plugin/
+│   └── marketplace.json           # Marketplace manifest (27 plugins)
+│
+└── scripts/
+    ├── skill-creator/             # (existing skill scripts)
+    └── marketplace/               # Marketplace automation
+        ├── generate_plugin.py     # Convert skill → plugin
+        ├── generate_bundle.py     # Create category bundles
+        ├── generate_marketplace.py # Build marketplace.json
+        └── validate_marketplace.py # Validate all plugins
 ```
 
-Each skill directory contains:
+**Each skill directory contains**:
 - `SKILL.md` - Main instructions
 - `scripts/` - Automation utilities
 - `references/` - Documentation
 - `assets/` - Templates and starter projects
 
+**Each plugin directory contains**:
+- `.claude-plugin/plugin.json` - Plugin manifest
+- `skills/<skill-name>/` - Skill content (copied from `.claude/skills/`)
+- `commands/` - Slash commands (1-3 per plugin)
+- `agents/` - Specialized agents (1-2 per plugin)
+
 ## Current Repository State
 
-**Progress**: 22/22 skills complete (100%) - All skills packaged and ready for distribution
+**Skills**: 22/22 complete (100%) - All skills packaged and ready for distribution
+
+**Plugins**: 27/27 complete (100%) - 22 individual + 5 bundles with commands and agents
+
+**Marketplace**: ✅ Active - marketplace.json published
 
 **All Skills Complete**:
 - **Core 3D & Animation (5)**: threejs-webgl, gsap-scrolltrigger, react-three-fiber, motion-framer, babylonjs-engine
@@ -95,7 +159,12 @@ Each skill directory contains:
 - **3D Authoring & Motion (4)**: blender-web-pipeline, spline-interactive, rive-interactive, substance-3d-texturing
 - **Meta-Skills (2)**: web3d-integration-patterns, modern-web-design
 
+**All Plugins Complete**:
+- **Individual (22)**: Each with 1-3 slash commands + 1-2 specialized agents
+- **Bundles (5)**: core-3d-animation, extended-3d-scroll, animation-components, authoring-motion, meta-skills
+
 Each skill directory contains SKILL.md, references/, scripts/, assets/, and a packaged .zip file.
+Each plugin directory contains plugin.json manifest, skills/, commands/, and agents/.
 
 ## Common Commands
 
